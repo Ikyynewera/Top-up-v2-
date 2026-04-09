@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up Center - IKYYY</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">TOP UP CENTER - IKYYY</div>
+    <input class="search" id="searchBox" placeholder="Telusuri top up..." />
+
+    <div class="diamond-box">
+      <span>💰</span>
+      <span id="saldoText">Saldo Anda: Rp 0</span>
+      <button class="reset" onclick="tambahSaldo()">+ SALDO</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="banner">
+      <button class="btn-back" id="btnBackHome">⬅ KEMBALI KE BERANDA</button>
+
+      <h2 id="bannerTitle">BERANDA</h2>
+      <p id="bannerText">Pilih game yang ingin Anda top up.</p>
+
+      <div class="game-select" id="gameSelect">
+
+        <div class="game-card" id="ffCard">
+          <div class="game-title ff">FREE FIRE - IKYYY</div>
+          <div class="game-desc">Top up diamond Free Fire</div>
+        </div>
+
+        <div class="game-card" id="mlbbCard">
+          <div class="game-title mlbb">MLBB - IKYYY</div>
+          <div class="game-desc">Top up diamond Mobile Legends</div>
+        </div>
+
+        <div class="game-card" id="robloxCard">
+          <div class="game-title roblox">ROBLOX - IKYYY</div>
+          <div class="game-desc">Top up Roblox / Game Pass</div>
+        </div>
+
+        <div class="game-card" id="pubgCard">
+          <div class="game-title pubg">PUBG MOBILE - IKYYY</div>
+          <div class="game-desc">Top up UC PUBG Mobile</div>
+        </div>
+
+      </div>
+
+      <div class="id-box" id="idBox" style="display:none;">
+        <input id="playerId" type="text" placeholder="Masukkan ID Anda" maxlength="25"/>
+        <div class="selamat">Selamat ber top up</div>
+        <div class="status-id" id="idStatus">ID: Belum diisi</div>
+
+        <div class="roblox-warning" id="robloxInfo" style="display:none;">
+          via game pas<br>Wajib memiliki game pas
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tabs" id="tabsBox" style="display:none;">
+      <div class="tab active" id="tabDiscount">DISCOUNT</div>
+      <div class="tab" id="tabNormal">HARGA NORMAL</div>
+    </div>
+
+    <div class="grid" id="packGrid" style="display:none;"></div>
+
+    <div class="method-box" id="methodBox" style="display:none;">
+      <h3>Pilih Metode Pembayaran</h3>
+      <div class="methods" id="methods"></div>
+    </div>
+
+    <div class="payment-bar" id="paymentBar" style="display:none;">
+      <div class="pay-info" id="selectedInfo">
+        Paket: <b>Belum dipilih</b><br>
+        Metode: <b>-</b><br>
+        Total: <b>-</b>
+      </div>
+      <button class="btn-pay" id="btnPay" disabled>PEMBAYARAN</button>
+    </div>
+
+    <div class="history" id="historyBox" style="display:none;">
+      <h3>Riwayat Transaksi</h3>
+      <div class="history-list" id="historyList"></div>
+    </div>
+
+  </div>
+
+  <div class="popup-bg" id="popupBg">
+    <div class="popup">
+      <div class="loading" id="loadingAnim"></div>
+      <div class="success" id="successIcon">✅</div>
+      <div class="popup-title" id="popupTitle">Memproses...</div>
+      <div class="popup-text" id="popupText">Mohon tunggu sebentar.</div>
+      <div class="btn-close" id="btnClose">SELESAI</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
