@@ -45,20 +45,20 @@ const mlbbNormal = [
 ];
 
 const robloxNormal = [
-  {price: 5000, dm: "2k"},
-  {price: 15000, dm: "3k"},
-  {price: 39000, dm: "5k"},
-  {price: 87000, dm: "12k"},
-  {price: 100000, dm: "22k"},
-  {price: 120000, dm: "25k"},
-  {price: 150000, dm: "39k"},
-  {price: 250000, dm: "50k"},
-  {price: 567000, dm: "190k"},
-  {price: 980000, dm: "230k"},
-  {price: 1200000, dm: "450k"},
-  {price: 1555000, dm: "555k"},
-  {price: 2055000, dm: "678k"},
-  {price: 1150000, dm: "1jt 150rb"},
+  {price: 5000, dm: "2RBX"},
+  {price: 15000, dm: "3RBX"},
+  {price: 39000, dm: "5RBX"},
+  {price: 87000, dm: "12RBX"},
+  {price: 100000, dm: "22RBX"},
+  {price: 120000, dm: "25RBX"},
+  {price: 150000, dm: "39RBX"},
+  {price: 250000, dm: "50RBX"},
+  {price: 567000, dm: "190RBX"},
+  {price: 980000, dm: "230kRBX"},
+  {price: 1200000, dm: "450RBX"},
+  {price: 1555000, dm: "555RBX"},
+  {price: 2055000, dm: "678RBX"},
+  {price: 1150000, dm: "1100RBX"},
 ];
 
 const pubgNormal = [
@@ -83,7 +83,7 @@ const pubgNormal = [
   {price: 1700000, dm: "1200 UC"},
 ];
 
-const paymentMethods = ["DANA","GOPAY","OVO","SHOPEEPAY","PULSA"];
+const paymentMethods = ["DANA","GOPAY","OVO","SHOPEEPAY"];
 
 // ====== STATE ======
 let currentGame = null;
